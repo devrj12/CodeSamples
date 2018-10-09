@@ -4,6 +4,7 @@
 
 
 %% Make the plots with new Data from CNOFS7pre2 ( folder name - saved by algorithmn CNOFS7pre2(a)) 
+
 Cka         = clock;
 dataDir     = 'C:\Users\joshide\Desktop\CNOFSDATAn1\Final\CNOFSpre2\N2\';
 dataDir12   = 'C:\Users\joshide\Desktop\CNOFSDATAn1\Final\CNOFSpre2\Leap2012\2012a\';
@@ -306,7 +307,7 @@ figure;p1 = sanePColor(DM2);cm2 = colormap(cm1); caxis([0 100]);cb1 = colorbar ;
 ax            = gca;
 ax.YTick      = 1:12;
 ax.XTick      = 2:2:18;
-ax.XTickLabel = -150:40:180; % figure this out – 150 or - 140
+ax.XTickLabel = -150:40:180; % figure this out Â– 150 or - 140
 ax.YTickLabel = {'Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'};
 ax.TickDir = 'out';
 ylabel('Month','FontSize',12);xlabel('Longitude','FontSize',12);
