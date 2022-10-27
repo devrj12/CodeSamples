@@ -9,8 +9,7 @@ function [x, fval, history,exitflag,output] =  Naldermead(x0)
 
  options = optimset('OutputFcn', @outfun,'Display','iter');
  [x,fval,exitflag,output] = fminsearch(@(x)ban2(x),x0,options);
-
-
+ 
  function stop = outfun(x,~,state)
         stop = false;
 
